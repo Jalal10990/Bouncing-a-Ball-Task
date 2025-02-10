@@ -1,0 +1,44 @@
+.container{
+    position: relative;
+    height: 80vh;
+    width: 100vw;
+    background-color: aqua;
+    border: 2px solid black;
+    
+}
+.Ball{
+       height: 50px;
+       width: 50px;
+       background-color: rgb(255, 0, 0);
+       border-radius: 70px;
+       border: 2px solid black;
+       position:absolute;
+       bottom: 0;
+       left:0;
+    
+       animation: jalalKaAnimation-X 3s linear infinite ,jalalKaAnimation-Y 1s ease-out infinite alternate;
+}
+
+@keyframes jalalKaAnimation-X {
+    
+    from{
+
+    left: 0;
+    }
+    to{
+       left: 100%;
+    }
+
+}
+
+@keyframes jalalKaAnimation-Y {
+    
+    from{
+     bottom: 0;
+
+    }
+    to{
+      bottom: 100%; 
+    }
+
+}
